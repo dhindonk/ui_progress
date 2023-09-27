@@ -41,27 +41,25 @@ class TesTing extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const CreateClass()));
             },
             child: Container(
-              width: 150,
-              height: 150,
-              decoration: BoxDecoration(
-                // image: const DecorationImage(
-                //     scale: 1,
-                //     image: AssetImage('assets/img/qr.png')
-                //     ),
-                color: Colors.deepPurpleAccent,
-                borderRadius: BorderRadius.circular(15),
-                
-              ),
-              child: Center(
-                child: Container(
-                  height: 100,
-                  width: 100,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(image: AssetImage('assets/img/qr.png'))
-                  ),
+                width: 150,
+                height: 150,
+                decoration: BoxDecoration(
+                  // image: const DecorationImage(
+                  //     scale: 1,
+                  //     image: AssetImage('assets/img/qr.png')
+                  //     ),
+                  color: Colors.deepPurpleAccent,
+                  borderRadius: BorderRadius.circular(15),
                 ),
-              )
-            ),
+                child: Center(
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('assets/img/qr.png'))),
+                  ),
+                )),
           ),
           SizedBox(width: 10),
           Container(

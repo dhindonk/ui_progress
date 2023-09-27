@@ -10,6 +10,22 @@ class CreateClass extends StatefulWidget {
 class _CreateClassState extends State<CreateClass> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 100.0),
+          child: TextField(
+              decoration: InputDecoration(label: Text('Ketik')),
+            ),
+          ),
+          SizedBox(height: 30,),
+          ElevatedButton(child: Text("Open Class"), onPressed: () {
+            Navigator.of(context).pop();
+          },)
+        ],
+      ),
+    );
   }
 }
